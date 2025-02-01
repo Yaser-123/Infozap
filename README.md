@@ -47,56 +47,77 @@ streamlit run app.py
 Access the App:
 Open your browser and navigate to http://localhost:8501 to use the AI Web Scraper.
 ```
+## Usage
 
-Usage
-Enter a Website URL:
+1. **Enter a Website URL**:
+   - Input the URL of the website you want to scrape in the provided text box.
 
-Input the URL of the website you want to scrape in the provided text box.
+2. **Scrape the Website**:
+   - Click the "Scrape Website" button to extract and clean the DOM content of the website.
 
-Scrape the Website:
+3. **View the Scraped Content**:
+   - Once the scraping is complete, you can view the cleaned DOM content in an expandable text box.
 
-Click the "Scrape Website" button to extract and clean the DOM content of the website.
+4. **Parse the Content**:
+   - Describe what you want to parse or extract from the scraped content in the text area provided.
+   - Click the "Parse Content" button to let the AI model process the content and provide the results.
 
-View the Scraped Content:
+## Dependencies
 
-Once the scraping is complete, you can view the cleaned DOM content in an expandable text box.
+- **Streamlit**: For building the web interface.
+- **BeautifulSoup**: For web scraping and DOM manipulation.
+- **Ollama**: For parsing and extracting information using AI.
 
-Parse the Content:
-
-Describe what you want to parse or extract from the scraped content in the text area provided.
-
-Click the "Parse Content" button to let the AI model process the content and provide the results.
-
-Dependencies
-Streamlit: For building the web interface.
-
-BeautifulSoup: For web scraping and DOM manipulation.
-
-Ollama: For parsing and extracting information using AI.
-
-Project Structure
-Copy
+## Project Structure
 ai-web-scraper/
-├── app.py                # Main Streamlit application
-├── scrape.py             # Functions for scraping and cleaning website content
-├── parse.py              # Functions for parsing content using Ollama
-├── requirements.txt      # List of dependencies
-├── README.md             # This file
-Contributing
+├── app.py # Main Streamlit application
+├── scrape.py # Functions for scraping and cleaning website content
+├── parse.py # Functions for parsing content using Ollama
+├── requirements.txt # List of dependencies
+├── README.md # This file
+
+Copy
+
+## Contributing
+
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-Fork the repository.
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes.
+4. Push your branch and submit a pull request.
 
-Create a new branch for your feature or bugfix.
+## License
 
-Commit your changes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Push your branch and submit a pull request.
+## Acknowledgments
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- Thanks to [Streamlit](https://streamlit.io/) for the amazing framework.
+- Thanks to [Ollama](https://ollama.ai/) for providing the AI parsing capabilities.
+Key Changes:
+Usage Section:
 
-Acknowledgments
-Thanks to Streamlit for the amazing framework.
+Added numbered steps for better readability.
 
-Thanks to Ollama for providing the AI parsing capabilities.
+Used ** for bold text to highlight actions like "Enter a Website URL" and "Scrape the Website."
+
+Dependencies Section:
+
+Used a bulleted list (-) to list dependencies.
+
+Project Structure:
+
+Used triple backticks (```) to format the directory structure as a code block.
+
+Contributing Section:
+
+Added numbered steps for clarity.
+
+License Section:
+
+Added a link to the LICENSE file (make sure the file exists in your repository).
+
+Acknowledgments Section:
+
+Added hyperlinks to Streamlit and Ollama for better reference.

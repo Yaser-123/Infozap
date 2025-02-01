@@ -18,11 +18,10 @@ Here are some screenshots of the application in action:
 ---
 ![Dashboard Overview](Images/img-2.png)
 ---
----
 ![Dashboard Overview](Images/img-3.png)
 ---
 ![Dashboard Overview](Images/img-4.png)
-------
+---
 ![Dashboard Overview](Images/img-5.png)
 ---
 <p align="center">
@@ -36,17 +35,17 @@ Here are some screenshots of the application in action:
    ```bash
    git clone https://github.com/your-username/ai-web-scraper.git
    cd ai-web-scraper
-2. Set Up a Virtual Environment (Optional but Recommended):
+2. **Set Up a Virtual Environment (Optional but Recommended)**:
 ```
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
-3. Install Dependencies:
+3. **Install Dependencies**:
 ```
 pip install -r requirements.txt
 ```
 
-4. Run the Streamlit App:
+4. **Run the Streamlit App**:
 ```
 streamlit run app.py
 Access the App:

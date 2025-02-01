@@ -91,33 +91,17 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
 
-- Thanks to [Streamlit](https://streamlit.io/) for the amazing framework.
-- Thanks to [Ollama](https://ollama.ai/) for providing the AI parsing capabilities.
-Key Changes:
-Usage Section:
-
-Added numbered steps for better readability.
-
-Used ** for bold text to highlight actions like "Enter a Website URL" and "Scrape the Website."
-
-Dependencies Section:
-
-Used a bulleted list (-) to list dependencies.
-
-Project Structure:
-
-Used triple backticks (```) to format the directory structure as a code block.
-
-Contributing Section:
-
-Added numbered steps for clarity.
-
-License Section:
-
-Added a link to the LICENSE file (make sure the file exists in your repository).
-
-Acknowledgments Section:
-
-Added hyperlinks to Streamlit and Ollama for better reference.
+### Key Features of This Markdown:
+1. **Headings**: Proper `##` for sections and `###` for subsections (if needed).
+2. **Lists**: 
+   - Numbered lists (`1.`, `2.`, etc.) for steps.
+   - Bulleted lists (`-`) for dependencies and acknowledgments.
+3. **Code Blocks**: 
+   - Triple backticks (```` ```plaintext ````) for the project structure.
+4. **Links**: 
+   - Proper Markdown links like `[Streamlit](https://streamlit.io/)`.
+5. **Bold Text**: 
+   - Using `**` for emphasis, e.g., **Enter a Website URL**.
+6. **Horizontal Lines**: 
+   - Using `---` to separate sections.

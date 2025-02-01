@@ -12,6 +12,9 @@ CHROMEDRIVER_PATH = "./chromedriver.exe"
 def scrape_website(website):
     print("Setting up the browser...")
     options = Options()
+    options.add_argument('--headless')  # Run Chrome in headless mode
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
     options.add_argument("--start-maximized")
     service = Service(CHROMEDRIVER_PATH)
 

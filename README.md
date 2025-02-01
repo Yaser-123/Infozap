@@ -69,14 +69,15 @@ Open your browser and navigate to http://localhost:8501 to use the AI Web Scrape
 - **Ollama**: For parsing and extracting information using AI.
 
 ## Project Structure
-ai-web-scraper/
-├── app.py # Main Streamlit application
-├── scrape.py # Functions for scraping and cleaning website content
-├── parse.py # Functions for parsing content using Ollama
-├── requirements.txt # List of dependencies
-├── README.md # This file
 
-Copy
+```plaintext
+ai-web-scraper/
+├── app.py                # Main Streamlit application
+├── scrape.py             # Functions for scraping and cleaning website content
+├── parse.py              # Functions for parsing content using Ollama
+├── requirements.txt      # List of dependencies
+├── README.md             # This file
+```
 
 ## Contributing
 

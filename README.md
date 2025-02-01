@@ -13,17 +13,15 @@ This project is a web scraping tool powered by AI, built using Streamlit. It all
 
 Here are some screenshots of the application in action:
 
-1. **Entering a Website URL**  
-   ![Enter URL](https://via.placeholder.com/600x400?text=Enter+Website+URL)
-
-2. **Scraping the Website**  
-   ![Scraping](https://via.placeholder.com/600x400?text=Scraping+Website)
-
-3. **Viewing the Scraped Content**  
-   ![View DOM Content](https://via.placeholder.com/600x400?text=View+DOM+Content)
-
-4. **Parsing the Content**  
-   ![Parsing](https://via.placeholder.com/600x400?text=Parsing+Content)
+---
+![Dashboard Overview](Images/img-1.png)
+---
+![Dashboard Overview](Images/img-2.png)
+---
+<p align="center">
+  <img src="Images/img-3.png"/>
+</p>
+---
 
 ## Installation
 

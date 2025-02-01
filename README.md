@@ -27,7 +27,6 @@ Here are some screenshots of the application in action:
 <p align="center">
   <img src="Images/img-6.png"/>
 </p>
----
 
 ## Installation
 

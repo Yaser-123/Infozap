@@ -6,8 +6,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import os
+import chromedriver_autoinstaller
 
-CHROMEDRIVER_PATH = "./chromedriver.exe"
+# Automatically install and use the correct version of chromedriver
+chromedriver_autoinstaller.install()
 
 def scrape_website(website):
     print("Setting up the browser...")
@@ -16,29 +18,35 @@ def scrape_website(website):
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument("--start-maximized")
-    service = Service(CHROMEDRIVER_PATH)
+    
+    # Dynamically set the path for ChromeDriver
+    service = Service(executable_path="chromedriver")
 
-    with webdriver.Chrome(service=service, options=options) as driver:
-        print("Opening the website...")
-        driver.get(website)
+    try:
+        with webdriver.Chrome(service=service, options=options) as driver:
+            print("Opening the website...")
+            driver.get(website)
 
-        # Prompt user to solve CAPTCHA
-        input("Solve the CAPTCHA manually and press Enter to continue...")
+            # Prompt user to solve CAPTCHA
+            input("Solve the CAPTCHA manually and press Enter to continue...")
 
-        # Wait for a specific element or condition (e.g., main content or body tag)
-        print("Waiting for the page to fully load...")
-        try:
-            WebDriverWait(driver, 60).until(
-                EC.presence_of_element_located((By.TAG_NAME, "body"))
-            )
-        except Exception as e:
-            print(f"Error: Page did not load in time: {e}")
-            return None
+            # Wait for a specific element or condition (e.g., main content or body tag)
+            print("Waiting for the page to fully load...")
+            try:
+                WebDriverWait(driver, 60).until(
+                    EC.presence_of_element_located((By.TAG_NAME, "body"))
+                )
+            except Exception as e:
+                print(f"Error: Page did not load in time: {e}")
+                return None
 
-        print("Scraping page content...")
-        html = driver.page_source
-        print("Page content successfully scraped!")
-        return html
+            print("Scraping page content...")
+            html = driver.page_source
+            print("Page content successfully scraped!")
+            return html
+    except Exception as e:
+        print(f"Error during scraping: {e}")
+        return None
 
 
 def extract_body_content(html_content):
@@ -50,9 +58,11 @@ def extract_body_content(html_content):
 def clean_body_content(body_content):
     soup = BeautifulSoup(body_content, "html.parser")
 
+    # Remove script and style tags
     for script_or_style in soup(["script", "style"]):
         script_or_style.extract()
 
+    # Clean text content
     cleaned_content = soup.get_text(separator="\n")
     cleaned_content = "\n".join(
         line.strip() for line in cleaned_content.splitlines() if line.strip()

@@ -36,17 +36,17 @@ Here are some screenshots of the application in action:
    ```bash
    git clone https://github.com/your-username/ai-web-scraper.git
    cd ai-web-scraper
-Set Up a Virtual Environment (Optional but Recommended):
+2. Set Up a Virtual Environment (Optional but Recommended):
 ```
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
-Install Dependencies:
+3. Install Dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-Run the Streamlit App:
+4. Run the Streamlit App:
 ```
 streamlit run app.py
 Access the App:

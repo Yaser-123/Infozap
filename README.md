@@ -91,18 +91,3 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
-### Key Features of This Markdown:
-1. **Headings**: Proper `##` for sections and `###` for subsections (if needed).
-2. **Lists**: 
-   - Numbered lists (`1.`, `2.`, etc.) for steps.
-   - Bulleted lists (`-`) for dependencies and acknowledgments.
-3. **Code Blocks**: 
-   - Triple backticks (```` ```plaintext ````) for the project structure.
-4. **Links**: 
-   - Proper Markdown links like `[Streamlit](https://streamlit.io/)`.
-5. **Bold Text**: 
-   - Using `**` for emphasis, e.g., **Enter a Website URL**.
-6. **Horizontal Lines**: 
-   - Using `---` to separate sections.

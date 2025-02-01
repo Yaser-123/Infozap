@@ -18,8 +18,15 @@ Here are some screenshots of the application in action:
 ---
 ![Dashboard Overview](Images/img-2.png)
 ---
+---
+![Dashboard Overview](Images/img-3.png)
+---
+![Dashboard Overview](Images/img-4.png)
+------
+![Dashboard Overview](Images/img-5.png)
+---
 <p align="center">
-  <img src="Images/img-3.png"/>
+  <img src="Images/img-6.png"/>
 </p>
 ---
 

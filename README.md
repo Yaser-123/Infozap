@@ -33,7 +33,7 @@ Here are some screenshots of the application in action:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/ai-web-scraper.git
-   cd ai-web-scraper
+   cd infozap
 2. **Set Up a Virtual Environment (Optional but Recommended)**:
 ```
 python -m venv venv
